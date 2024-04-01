@@ -1,0 +1,39 @@
+CREATE TABLE Books (
+  BookID INT PRIMARY KEY,
+  Title VARCHAR(255),
+  Author VARCHAR(255),
+  GenreID INT,
+  PublicationYear INT
+)
+GO
+
+CREATE TABLE Genres (
+  GenreID INT PRIMARY KEY,
+  GenreName VARCHAR(255)
+)
+GO
+
+CREATE TABLE Users (
+  UserID INT PRIMARY KEY,
+  UserName VARCHAR(255),
+  MembershipType VARCHAR(50)
+)
+GO
+
+CREATE TABLE Loans (
+  LoanID INT PRIMARY KEY,
+  BookID INT,
+  UserID INT,
+  LoanDate DATETIME,
+  ReturnDate DATETIME
+)
+GO
+
+ALTER TABLE Loans ADD FOREIGN KEY (UserID) REFERENCES Users (UserID)
+GO
+
+ALTER TABLE Loans ADD FOREIGN KEY (BookID) REFERENCES Books (BookID)
+GO
+
+ALTER TABLE Books ADD FOREIGN KEY (BookID) REFERENCES Genres (GenreID)
+GO

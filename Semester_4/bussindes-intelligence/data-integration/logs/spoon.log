@@ -1,0 +1,293 @@
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Could not execute command
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.io.IOException: Cannot run program "lsb_release": error=2, No such file or directory
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.Runtime.exec(Runtime.java:681)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.Runtime.exec(Runtime.java:491)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.Runtime.exec(Runtime.java:366)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.ExecuteCommand(EnvironmentUtils.java:170)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.getLinuxDistribution(EnvironmentUtils.java:155)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.getEnvironmentName(EnvironmentUtils.java:119)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.isWebkitUnavailable(EnvironmentUtils.java:98)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.checkEnvironment(Spoon.java:9460)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9538)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - Caused by: java.io.IOException: error=2, No such file or directory
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	... 14 more
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Could not execute command
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.io.IOException: Cannot run program "lsb_release": error=2, No such file or directory
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.Runtime.exec(Runtime.java:681)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.Runtime.exec(Runtime.java:491)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.Runtime.exec(Runtime.java:366)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.ExecuteCommand(EnvironmentUtils.java:170)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.getLinuxDistribution(EnvironmentUtils.java:155)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.getEnvironmentName(EnvironmentUtils.java:119)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.isUnsupportedBrowserEnvironment(EnvironmentUtils.java:58)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.checkEnvironment(Spoon.java:9461)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9538)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - Caused by: java.io.IOException: error=2, No such file or directory
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	... 14 more
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Could not open a browser
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.eclipse.swt.SWTError: No more handles because no underlying browser available.
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 -    SWT on GTK 2.x detected. It is reccomended to use SWT on GTK 3.x and Webkit2 API.
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.eclipse.swt.SWT.error(SWT.java:4621)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.eclipse.swt.browser.Browser.<init>(Browser.java:128)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.getUserAgent(EnvironmentUtils.java:81)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.util.EnvironmentUtils.getBrowserName(EnvironmentUtils.java:183)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.checkEnvironment(Spoon.java:9462)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9538)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+2024/04/01 13:05:32 - org.pentaho.di.ui.util.EnvironmentUtils@b428830 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2024/04/01 13:09:16 - Spoon - Transformation opened.
+2024/04/01 13:09:16 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:09:16 - Spoon - Started the transformation execution.
+2024/04/01 13:09:16 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:09:16 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+2024/04/01 13:09:16 - Spoon - The transformation has finished!!
+2024/04/01 13:11:52 - Spoon - Transformation opened.
+2024/04/01 13:11:52 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:11:52 - Spoon - Started the transformation execution.
+2024/04/01 13:11:52 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:11:52 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+2024/04/01 13:11:52 - Spoon - The transformation has finished!!
+2024/04/01 13:14:25 - Spoon - Transformation opened.
+2024/04/01 13:14:25 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:14:25 - Spoon - Started the transformation execution.
+2024/04/01 13:14:25 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:14:25 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:14:25 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:14:25 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:14:25 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:14:25 - Database lookup.0 - 
+2024/04/01 13:14:25 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:14:25 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:14:25 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:14:25 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1078, U=0, E=0)
+2024/04/01 13:14:25 - Select values.0 - Finished processing (I=0, O=0, R=14, W=13, U=0, E=0)
+2024/04/01 13:14:25 - Calculator.0 - Finished processing (I=0, O=0, R=40, W=39, U=0, E=0)
+2024/04/01 13:14:25 - Add sequence.0 - Finished processing (I=0, O=0, R=419, W=419, U=0, E=0)
+2024/04/01 13:14:25 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:14:25 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:14:25 - Spoon - The transformation has finished!!
+2024/04/01 13:14:25 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:14:25 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:14:25 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:14:25 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:18:27 - Spoon - Transformation opened.
+2024/04/01 13:18:27 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:18:27 - Spoon - Started the transformation execution.
+2024/04/01 13:18:27 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:18:27 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:18:27 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:18:27 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:18:27 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:18:27 - Database lookup.0 - 
+2024/04/01 13:18:27 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:18:27 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:18:27 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:18:27 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=634, U=0, E=0)
+2024/04/01 13:18:27 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2024/04/01 13:18:27 - Calculator.0 - Finished processing (I=0, O=0, R=13, W=12, U=0, E=0)
+2024/04/01 13:18:27 - Add sequence.0 - Finished processing (I=0, O=0, R=115, W=115, U=0, E=0)
+2024/04/01 13:18:27 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:18:27 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:18:27 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:18:27 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:18:27 - Spoon - The transformation has finished!!
+2024/04/01 13:18:27 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:18:27 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:21:52 - Spoon - Transformation opened.
+2024/04/01 13:21:52 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:21:52 - Spoon - Started the transformation execution.
+2024/04/01 13:21:52 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:21:52 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:21:52 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:21:52 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:21:52 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:21:52 - Database lookup.0 - 
+2024/04/01 13:21:52 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:21:52 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:21:52 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:21:52 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=789, U=0, E=0)
+2024/04/01 13:21:52 - Add sequence.0 - Finished processing (I=0, O=0, R=235, W=234, U=0, E=0)
+2024/04/01 13:21:52 - Select values.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2024/04/01 13:21:52 - Calculator.0 - Finished processing (I=0, O=0, R=31, W=30, U=0, E=0)
+2024/04/01 13:21:52 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:21:52 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:21:52 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:21:52 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:21:52 - Spoon - The transformation has finished!!
+2024/04/01 13:21:52 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:21:52 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:26:59 - Spoon - Transformation opened.
+2024/04/01 13:26:59 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:26:59 - Spoon - Started the transformation execution.
+2024/04/01 13:26:59 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:26:59 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:26:59 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:26:59 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:26:59 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:26:59 - Database lookup.0 - 
+2024/04/01 13:26:59 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:26:59 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:26:59 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:26:59 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=741, U=0, E=0)
+2024/04/01 13:26:59 - Calculator.0 - Finished processing (I=0, O=0, R=43, W=43, U=0, E=0)
+2024/04/01 13:26:59 - Add sequence.0 - Finished processing (I=0, O=0, R=331, W=331, U=0, E=0)
+2024/04/01 13:26:59 - Select values.0 - Finished processing (I=0, O=0, R=12, W=12, U=0, E=0)
+2024/04/01 13:26:59 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:26:59 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:26:59 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:27:00 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:27:00 - Spoon - The transformation has finished!!
+2024/04/01 13:27:00 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:27:00 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:29:55 - Spoon - Transformation opened.
+2024/04/01 13:29:55 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:29:55 - Spoon - Started the transformation execution.
+2024/04/01 13:29:55 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:29:55 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:29:55 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:29:55 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:29:55 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:29:55 - Database lookup.0 - 
+2024/04/01 13:29:55 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:29:55 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:29:55 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:29:55 - Calculator.0 - Finished processing (I=0, O=0, R=46, W=46, U=0, E=0)
+2024/04/01 13:29:55 - Add sequence.0 - Finished processing (I=0, O=0, R=292, W=291, U=0, E=0)
+2024/04/01 13:29:55 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2024/04/01 13:29:55 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:29:55 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=614, U=0, E=0)
+2024/04/01 13:29:55 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:29:55 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:29:55 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:29:55 - Spoon - The transformation has finished!!
+2024/04/01 13:29:55 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:29:55 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:35:21 - Spoon - Transformation opened.
+2024/04/01 13:35:21 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:35:21 - Spoon - Started the transformation execution.
+2024/04/01 13:35:21 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:35:21 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:35:21 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:35:21 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:35:21 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:35:21 - Database lookup.0 - 
+2024/04/01 13:35:21 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:35:21 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:35:21 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:35:21 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1032, U=0, E=0)
+2024/04/01 13:35:21 - Calculator.0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2024/04/01 13:35:21 - Add sequence.0 - Finished processing (I=0, O=0, R=522, W=522, U=0, E=0)
+2024/04/01 13:35:21 - Select values.0 - Finished processing (I=0, O=0, R=8, W=7, U=0, E=0)
+2024/04/01 13:35:21 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:35:21 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:35:21 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:35:21 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:35:21 - Spoon - The transformation has finished!!
+2024/04/01 13:35:21 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:35:21 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:52:00 - /home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion - Dispatching started for transformation [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion]
+2024/04/01 13:52:01 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1001, U=0, E=0)
+2024/04/01 13:52:01 - dummy.0 - Finished processing (I=0, O=0, R=889, W=888, U=0, E=0)
+2024/04/01 13:53:09 - Spoon - Transformation opened.
+2024/04/01 13:53:09 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 13:53:09 - Spoon - Started the transformation execution.
+2024/04/01 13:53:09 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 13:53:09 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+2024/04/01 13:53:09 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1825, U=0, E=0)
+org.pentaho.di.core.exception.KettleStepException: 
+Field [streamDate] is required and couldn't be found!
+
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:53:09 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2024/04/01 13:53:09 - Database lookup.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2024/04/01 13:53:09 - Database lookup.0 - Field [streamDate] is required and couldn't be found!
+2024/04/01 13:53:09 - Database lookup.0 - 
+2024/04/01 13:53:09 - Database lookup.0 - 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+2024/04/01 13:53:09 - Database lookup.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2024/04/01 13:53:09 - Database lookup.0 - 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024/04/01 13:53:09 - Calculator.0 - Finished processing (I=0, O=0, R=86, W=85, U=0, E=0)
+2024/04/01 13:53:09 - Select values.0 - Finished processing (I=0, O=0, R=47, W=46, U=0, E=0)
+2024/04/01 13:53:09 - Add sequence.0 - Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
+2024/04/01 13:53:09 - Database lookup.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024/04/01 13:53:09 - timeDimenseion - Transformation detected one or more steps with errors.
+2024/04/01 13:53:09 - timeDimenseion - Transformation is killing the other steps!
+2024/04/01 13:53:09 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:53:09 - Spoon - The transformation has finished!!
+2024/04/01 13:53:09 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 13:53:09 - timeDimenseion - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2024/04/01 14:24:26 - Spoon - Transformation opened.
+2024/04/01 14:24:26 - Spoon - Launching transformation [timeDimenseion]...
+2024/04/01 14:24:26 - Spoon - Started the transformation execution.
+2024/04/01 14:24:26 - timeDimenseion - Dispatching started for transformation [timeDimenseion]
+2024/04/01 14:24:26 - Table output.0 - Connected to database [conn_dw_destination] (commit=1000)
+2024/04/01 14:24:26 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1825, U=0, E=0)
+2024/04/01 14:24:26 - Add sequence.0 - Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
+2024/04/01 14:24:26 - Calculator.0 - Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
+2024/04/01 14:24:26 - Select values.0 - Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
+2024/04/01 14:24:27 - Database lookup.0 - Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
+2024/04/01 14:24:27 - Filter rows.0 - Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
+2024/04/01 14:24:27 - Table output.0 - Finished processing (I=0, O=1825, R=1825, W=1825, U=0, E=0)
+2024/04/01 14:24:27 - Spoon - The transformation has finished!!
+Graphics2D from BufferedImage lacks BUFFERED_IMAGE hint
+2024/04/01 16:46:19 - Spoon - Save file as...
