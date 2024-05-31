@@ -527,7 +527,7 @@
     <hop>
       <from>Filter rows</from>
       <to>Table output</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
   </order>
   <step>
@@ -855,27 +855,21 @@
     <fields>
       <field>
         <name>CurrentDate</name>
-        <rename/>
       </field>
       <field>
         <name>incrementDay</name>
-        <rename/>
       </field>
       <field>
         <name>streamDate</name>
-        <rename/>
       </field>
       <field>
         <name>streamYear</name>
-        <rename/>
       </field>
       <field>
         <name>streamMonth</name>
-        <rename/>
       </field>
       <field>
         <name>streamDay</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>

@@ -1,156 +1,230 @@
-2024-04-01 13:09:16.418 INFO  <Thread-26> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:09:16.443 INFO  <init of Table output.0 (Thread-32)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:11:52.326 INFO  <Thread-42> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:11:52.339 INFO  <init of Table output.0 (Thread-48)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:14:25.580 INFO  <Thread-60> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:14:25.588 INFO  <init of Table output.0 (Thread-67)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:14:25.609 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:14:25.610 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
+2024-05-08 12:07:41.948 INFO  <ModalContext> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2.ktr]  Dispatching started for transformation [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2]
+2024-05-08 12:07:41.986 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2.ktr]  Finished reading query, closing connection
+2024-05-08 12:07:41.986 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2024-05-08 12:07:41.988 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2 - dummy> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr : Transformation 2.ktr]  Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2024-05-08 12:27:45.877 INFO  <Thread-41> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Dispatching started for transformation [Transformation 2]
+2024-05-08 12:27:45.889 INFO  <init of Table output.0 (Thread-45)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 12:27:45.898 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished reading query, closing connection
+2024-05-08 12:27:45.899 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2024-05-08 12:27:45.900 ERROR <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Unexpected error
+2024-05-08 12:27:45.900 ERROR <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  org.pentaho.di.core.exception.KettleValueException: 
+Unexpected conversion error while converting value [string String] to an Integer
 
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
+string String : couldn't convert String to Integer
+
+string String : couldn't convert String to number : non-numeric character found at position 1 for value [None]
+
+
+
+	at org.pentaho.di.core.row.value.ValueMetaBase.getInteger(ValueMetaBase.java:2131)
+	at org.pentaho.di.core.row.value.ValueMetaBase.convertData(ValueMetaBase.java:3868)
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.initNullIf(DatabaseLookup.java:310)
+	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:422)
 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.pentaho.di.core.exception.KettleValueException: 
+string String : couldn't convert String to Integer
 
-2024-04-01 13:14:25.611 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=1078, U=0, E=0)
-2024-04-01 13:14:25.611 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=14, W=13, U=0, E=0)
-2024-04-01 13:14:25.612 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=40, W=39, U=0, E=0)
-2024-04-01 13:14:25.612 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=419, W=419, U=0, E=0)
-2024-04-01 13:14:25.612 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:14:25.613 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:14:25.614 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:14:25.615 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:14:25.623 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:14:25.623 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:18:27.326 INFO  <Thread-81> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:18:27.333 INFO  <init of Table output.0 (Thread-88)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:18:27.351 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:18:27.351 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
+string String : couldn't convert String to number : non-numeric character found at position 1 for value [None]
 
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
-	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
 
-2024-04-01 13:18:27.352 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=634, U=0, E=0)
-2024-04-01 13:18:27.352 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
-2024-04-01 13:18:27.352 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=13, W=12, U=0, E=0)
-2024-04-01 13:18:27.352 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=115, W=115, U=0, E=0)
-2024-04-01 13:18:27.353 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:18:27.354 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:18:27.354 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:18:27.498 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:18:27.499 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:18:27.505 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:21:52.075 INFO  <Thread-107> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:21:52.080 INFO  <init of Table output.0 (Thread-114)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:21:52.092 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:21:52.092 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
+	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToInteger(ValueMetaBase.java:1355)
+	at org.pentaho.di.core.row.value.ValueMetaBase.getInteger(ValueMetaBase.java:2069)
+	... 5 more
+Caused by: org.pentaho.di.core.exception.KettleValueException: 
+string String : couldn't convert String to number : non-numeric character found at position 1 for value [None]
 
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
-	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
+	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToInteger(ValueMetaBase.java:1349)
+	... 6 more
 
-2024-04-01 13:21:52.093 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=789, U=0, E=0)
-2024-04-01 13:21:52.093 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=235, W=234, U=0, E=0)
-2024-04-01 13:21:52.093 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
-2024-04-01 13:21:52.093 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=31, W=30, U=0, E=0)
-2024-04-01 13:21:52.094 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:21:52.094 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:21:52.094 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:21:52.238 ERROR <timeDimenseion - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:21:52.239 ERROR <timeDimenseion - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:21:52.240 ERROR <timeDimenseion - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:26:59.938 INFO  <Thread-128> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:26:59.945 INFO  <init of Table output.0 (Thread-135)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:26:59.957 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:26:59.957 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
+2024-05-08 12:27:45.901 INFO  <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024-05-08 12:27:45.901 WARN  <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Transformation detected one or more steps with errors.
+2024-05-08 12:27:45.901 WARN  <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Transformation is killing the other steps!
+2024-05-08 12:27:45.983 ERROR <Transformation 2 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Errors detected!
+2024-05-08 12:27:45.983 ERROR <Transformation 2 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Errors detected!
+2024-05-08 12:27:46.021 ERROR <Transformation 2 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Errors detected!
+2024-05-08 12:29:55.277 INFO  <Thread-55> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Dispatching started for transformation [Transformation 2]
+2024-05-08 12:29:55.284 INFO  <init of Table output.0 (Thread-59)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 12:29:55.293 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished reading query, closing connection
+2024-05-08 12:29:55.294 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2024-05-08 12:29:55.307 INFO  <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2024-05-08 12:29:55.308 INFO  <Transformation 2 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2024-05-08 12:29:55.314 INFO  <Transformation 2 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=4, R=4, W=4, U=0, E=0)
+2024-05-08 13:23:26.554 INFO  <Thread-72> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Dispatching started for transformation [Transformation 2]
+2024-05-08 13:23:26.555 ERROR <init of Table input.0 (Thread-73)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  You need to specify a database connection.
+2024-05-08 13:23:26.556 ERROR <init of Table input.0 (Thread-73)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Error initializing step [Table input]
+2024-05-08 13:23:26.557 INFO  <init of Table output.0 (Thread-76)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 13:23:26.558 ERROR <Thread-72> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Step [Table input.0] failed to initialize!
+2024-05-08 13:23:26.558 INFO  <Thread-72> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished reading query, closing connection
+2024-05-08 13:23:26.559 ERROR <Thread-72> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Errors detected!
+2024-05-08 13:23:26.561 ERROR <Thread-72> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Errors detected!
+2024-05-08 13:24:20.088 INFO  <Thread-80> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Dispatching started for transformation [Transformation 2]
+2024-05-08 13:24:20.091 INFO  <init of Table output.0 (Thread-84)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 13:24:20.097 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished reading query, closing connection
+2024-05-08 13:24:20.098 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2024-05-08 13:24:20.103 INFO  <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=4, O=0, R=4, W=4, U=0, E=0)
+2024-05-08 13:24:20.104 INFO  <Transformation 2 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=0, R=4, W=0, U=0, E=0)
+2024-05-08 13:25:19.794 INFO  <Thread-102> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Dispatching started for transformation [Transformation 3]
+2024-05-08 13:25:19.797 INFO  <init of Table output.0 (Thread-106)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 13:25:19.802 INFO  <Transformation 3 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished reading query, closing connection
+2024-05-08 13:25:19.802 INFO  <Transformation 3 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024-05-08 13:25:19.806 INFO  <Transformation 3 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024-05-08 13:25:19.806 INFO  <Transformation 3 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024-05-08 13:25:19.811 INFO  <Transformation 3 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024-05-08 13:28:29.453 INFO  <Thread-127> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Dispatching started for transformation [Transformation 4]
+2024-05-08 13:28:29.456 INFO  <init of Table output.0 (Thread-131)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 13:28:29.479 INFO  <Transformation 4 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished reading query, closing connection
+2024-05-08 13:28:29.479 INFO  <Transformation 4 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=681, O=0, R=0, W=681, U=0, E=0)
+2024-05-08 13:28:29.604 INFO  <Transformation 4 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=0, O=0, R=681, W=681, U=0, E=0)
+2024-05-08 13:28:29.606 INFO  <Transformation 4 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=0, O=0, R=681, W=681, U=0, E=0)
+2024-05-08 13:28:29.660 INFO  <Transformation 4 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=0, O=681, R=681, W=681, U=0, E=0)
+2024-05-08 13:55:36.959 INFO  <ModalContext> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5.ktr]  Dispatching started for transformation [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5]
+2024-05-08 13:55:37.464 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5 - dummy> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5.ktr]  Finished processing (I=0, O=0, R=900, W=899, U=0, E=0)
+2024-05-08 13:55:37.465 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 13:55:37.473 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr : Transformation 5.ktr]  Finished processing (I=1003, O=0, R=0, W=1001, U=0, E=0)
+2024-05-08 14:02:54.897 INFO  <Thread-155> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:02:55.990 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:02:55.990 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:02:59.107 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:04:03.901 INFO  <Thread-163> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:04:03.908 ERROR <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Because of an error, this step can't continue: 
+Error looking up row in database
+Unknown column 'id_dimDate' in 'field list'
 
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
-	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-2024-04-01 13:26:59.957 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=741, U=0, E=0)
-2024-04-01 13:26:59.957 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=43, W=43, U=0, E=0)
-2024-04-01 13:26:59.958 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=331, W=331, U=0, E=0)
-2024-04-01 13:26:59.958 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=12, W=12, U=0, E=0)
-2024-04-01 13:26:59.958 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:26:59.958 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:26:59.958 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:27:00.101 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:27:00.101 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:27:00.102 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:29:55.633 INFO  <Thread-145> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:29:55.641 INFO  <init of Table output.0 (Thread-152)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:29:55.656 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:29:55.657 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
-
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
-	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-2024-04-01 13:29:55.657 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=46, W=46, U=0, E=0)
-2024-04-01 13:29:55.657 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=292, W=291, U=0, E=0)
-2024-04-01 13:29:55.657 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
-2024-04-01 13:29:55.658 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:29:55.658 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=614, U=0, E=0)
-2024-04-01 13:29:55.659 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:29:55.659 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:29:55.803 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:29:55.803 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:29:55.805 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:35:21.106 INFO  <Thread-168> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:35:21.113 INFO  <init of Table output.0 (Thread-175)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:35:21.124 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:35:21.125 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
-
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
-	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-2024-04-01 13:35:21.125 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=1032, U=0, E=0)
-2024-04-01 13:35:21.125 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=522, W=522, U=0, E=0)
-2024-04-01 13:35:21.125 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
-2024-04-01 13:35:21.125 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=8, W=7, U=0, E=0)
-2024-04-01 13:35:21.126 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:35:21.126 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:35:21.126 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:35:21.269 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:35:21.270 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:35:21.272 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:52:00.817 INFO  <ModalContext> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion.ktr]  Dispatching started for transformation [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion]
-2024-04-01 13:52:01.322 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=1001, U=0, E=0)
-2024-04-01 13:52:01.322 INFO  </home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion - dummy> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr : timeDimenseion.ktr]  Finished processing (I=0, O=0, R=889, W=888, U=0, E=0)
-2024-04-01 13:53:09.772 INFO  <Thread-196> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 13:53:09.778 INFO  <init of Table output.0 (Thread-203)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 13:53:09.786 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=1825, U=0, E=0)
-2024-04-01 13:53:09.788 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Unexpected error
-2024-04-01 13:53:09.789 ERROR <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  org.pentaho.di.core.exception.KettleStepException: 
-Field [streamDate] is required and couldn't be found!
-
-	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:398)
-	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-2024-04-01 13:53:09.790 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=47, W=46, U=0, E=0)
-2024-04-01 13:53:09.790 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=86, W=85, U=0, E=0)
-2024-04-01 13:53:09.790 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
-2024-04-01 13:53:09.791 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2024-04-01 13:53:09.791 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation detected one or more steps with errors.
-2024-04-01 13:53:09.791 WARN  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Transformation is killing the other steps!
-2024-04-01 13:53:09.934 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:53:09.935 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 13:53:09.936 ERROR <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Errors detected!
-2024-04-01 14:24:26.590 INFO  <Thread-220> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Dispatching started for transformation [timeDimenseion]
-2024-04-01 14:24:26.596 INFO  <init of Table output.0 (Thread-227)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Connected to database [conn_dw_destination] (commit=1000)
-2024-04-01 14:24:26.606 INFO  <timeDimenseion - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=0, W=1825, U=0, E=0)
-2024-04-01 14:24:26.609 INFO  <timeDimenseion - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
-2024-04-01 14:24:26.666 INFO  <timeDimenseion - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
-2024-04-01 14:24:26.668 INFO  <timeDimenseion - Select values> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
-2024-04-01 14:24:27.121 INFO  <timeDimenseion - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
-2024-04-01 14:24:27.123 INFO  <timeDimenseion - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=0, R=1825, W=1825, U=0, E=0)
-2024-04-01 14:24:27.193 INFO  <timeDimenseion - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/meet-4-/timeDimenseion.ktr]  Finished processing (I=0, O=1825, R=1825, W=1825, U=0, E=0)
+2024-05-08 14:04:03.908 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:04:03.909 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2024-05-08 14:04:03.909 WARN  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Transformation detected one or more steps with errors.
+2024-05-08 14:04:03.909 WARN  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Transformation is killing the other steps!
+2024-05-08 14:04:03.938 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=877, O=0, R=0, W=875, U=0, E=0)
+2024-05-08 14:04:03.950 ERROR <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Errors detected!
+2024-05-08 14:04:03.950 ERROR <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Errors detected!
+2024-05-08 14:04:03.951 ERROR <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Errors detected!
+2024-05-08 14:04:49.085 INFO  <Thread-172> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:04:49.377 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:04:49.377 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:04:50.240 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:07:25.909 INFO  <Thread-190> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:07:26.340 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:07:26.340 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:07:27.570 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:07:27.580 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:07:27.590 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:07:27.943 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:12:44.062 INFO  <Thread-208> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:12:44.645 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:12:44.646 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:12:46.154 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:12:46.166 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:12:46.177 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:12:46.509 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:12:46.518 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:12:46.518 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:14:30.905 INFO  <Thread-228> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:14:31.386 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:14:31.386 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:14:32.789 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:14:32.802 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:14:32.813 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:14:33.198 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:14:33.207 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:14:33.208 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:21.275 INFO  <Thread-249> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:19:21.279 INFO  <init of Table output.0 (Thread-257)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:19:21.844 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:19:21.845 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:19:23.553 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:23.567 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:23.578 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:23.946 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:23.958 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:23.959 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:24.009 INFO  <Transformation 5 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=13069, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:39.069 INFO  <Thread-268> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:19:39.073 INFO  <init of Table output.0 (Thread-276)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:19:39.587 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:19:39.588 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:19:41.220 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:41.235 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:41.248 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:41.595 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:41.607 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:41.608 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:19:41.657 INFO  <Transformation 5 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=13069, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:20.859 INFO  <Thread-291> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:22:20.863 INFO  <init of Table output.0 (Thread-299)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:22:21.390 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:22:21.391 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:22:22.827 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:22.839 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:22.850 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:23.209 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:23.218 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:23.219 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=0, U=0, E=0)
+2024-05-08 14:22:34.679 INFO  <Thread-310> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:22:34.683 INFO  <init of Table output.0 (Thread-318)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:22:35.180 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:22:35.181 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:22:36.607 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:36.619 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:36.629 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:36.975 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:36.984 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:22:36.985 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=0, U=0, E=0)
+2024-05-08 14:29:30.193 WARN  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Start of job execution
+2024-05-08 14:29:30.198 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Starting entry [Transformation]
+2024-05-08 14:29:30.203 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Using run configuration [Pentaho local]
+2024-05-08 14:29:30.204 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Dispatching started for transformation [Transformation 1]
+2024-05-08 14:29:30.211 INFO  <init of Table output.0 (Thread-341)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:29:30.213 INFO  <Transformation 1 - Generate rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Finished processing (I=0, O=0, R=0, W=1460, U=0, E=0)
+2024-05-08 14:29:30.217 INFO  <Transformation 1 - Add sequence> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2024-05-08 14:29:30.234 INFO  <Transformation 1 - Calculator> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2024-05-08 14:29:30.433 INFO  <Transformation 1 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2024-05-08 14:29:30.434 INFO  <Transformation 1 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2024-05-08 14:29:30.457 INFO  <Transformation 1 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 1.ktr]  Finished processing (I=0, O=1460, R=1460, W=1460, U=0, E=0)
+2024-05-08 14:29:30.458 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Starting entry [Transformation 2]
+2024-05-08 14:29:30.464 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Using run configuration [Pentaho local]
+2024-05-08 14:29:30.465 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Dispatching started for transformation [Transformation 2]
+2024-05-08 14:29:30.469 INFO  <init of Table output.0 (Thread-356)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:29:30.470 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished reading query, closing connection
+2024-05-08 14:29:30.470 INFO  <Transformation 2 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2024-05-08 14:29:30.473 INFO  <Transformation 2 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2024-05-08 14:29:30.475 INFO  <Transformation 2 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2024-05-08 14:29:30.479 INFO  <Transformation 2 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 2.ktr]  Finished processing (I=0, O=4, R=4, W=4, U=0, E=0)
+2024-05-08 14:29:30.479 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Starting entry [Transformation 3]
+2024-05-08 14:29:30.487 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Using run configuration [Pentaho local]
+2024-05-08 14:29:30.488 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Dispatching started for transformation [Transformation 3]
+2024-05-08 14:29:30.490 INFO  <init of Table output.0 (Thread-364)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:29:30.491 INFO  <Transformation 3 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished reading query, closing connection
+2024-05-08 14:29:30.492 INFO  <Transformation 3 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2024-05-08 14:29:30.494 INFO  <Transformation 3 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024-05-08 14:29:30.495 INFO  <Transformation 3 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2024-05-08 14:29:30.499 INFO  <Transformation 3 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 3.ktr]  Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2024-05-08 14:29:30.499 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Starting entry [Transformation 4]
+2024-05-08 14:29:30.505 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Using run configuration [Pentaho local]
+2024-05-08 14:29:30.505 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Dispatching started for transformation [Transformation 4]
+2024-05-08 14:29:30.508 INFO  <init of Table output.0 (Thread-372)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:29:30.511 INFO  <Transformation 4 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished reading query, closing connection
+2024-05-08 14:29:30.512 INFO  <Transformation 4 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=681, O=0, R=0, W=681, U=0, E=0)
+2024-05-08 14:29:30.573 INFO  <Transformation 4 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=0, O=0, R=681, W=681, U=0, E=0)
+2024-05-08 14:29:30.574 INFO  <Transformation 4 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=0, O=0, R=681, W=681, U=0, E=0)
+2024-05-08 14:29:30.613 INFO  <Transformation 4 - Table output> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 4.ktr]  Finished processing (I=0, O=681, R=681, W=681, U=0, E=0)
+2024-05-08 14:29:30.614 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Starting entry [Transformation 5]
+2024-05-08 14:29:30.618 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Using run configuration [Pentaho local]
+2024-05-08 14:29:30.619 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Dispatching started for transformation [Transformation 5]
+2024-05-08 14:29:30.622 INFO  <init of Table output.0 (Thread-384)> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Connected to database [olap] (commit=1000)
+2024-05-08 14:29:31.122 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished reading query, closing connection
+2024-05-08 14:29:31.123 INFO  <Transformation 5 - Table input> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=0, W=13069, U=0, E=0)
+2024-05-08 14:29:32.628 INFO  <Transformation 5 - Database lookup> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:29:32.640 INFO  <Transformation 5 - Database lookup 2> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:29:32.651 INFO  <Transformation 5 - Database lookup 3> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:29:32.993 INFO  <Transformation 5 - Database lookup 4> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=13069, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:29:33.003 INFO  <Transformation 5 - Database lookup 5> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=13069, U=0, E=0)
+2024-05-08 14:29:33.004 INFO  <Transformation 5 - Filter rows> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb  file:///home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Transformation 5.ktr]  Finished processing (I=0, O=0, R=13069, W=0, U=0, E=0)
+2024-05-08 14:29:33.007 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Starting entry [Success]
+2024-05-08 14:29:33.008 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Finished job entry [Success] (result=[true])
+2024-05-08 14:29:33.008 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Finished job entry [Transformation 5] (result=[true])
+2024-05-08 14:29:33.008 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Finished job entry [Transformation 4] (result=[true])
+2024-05-08 14:29:33.008 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Finished job entry [Transformation 3] (result=[true])
+2024-05-08 14:29:33.008 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Finished job entry [Transformation 2] (result=[true])
+2024-05-08 14:29:33.008 INFO  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Finished job entry [Transformation] (result=[true])
+2024-05-08 14:29:33.008 WARN  <Thread-335> [/home/zharsuke/Documents/college-stuff/Semester_4/bussindes-intelligence/anu/Job 1.kjb]  Job execution finished
