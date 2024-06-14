@@ -1,0 +1,39 @@
+create table fact_transaction (
+	id_dim_date int,
+    id_dim_pembeli int,
+    id_dim_penjual int,
+    id_dim_product int,
+    qty int,
+    price double,
+    total_price double,
+    FOREIGN KEY (id_dim_date) REFERENCES dim_date(id_dim_date),
+    FOREIGN KEY (id_dim_pembeli) REFERENCES dim_pembeli(id_dim_pembeli),
+    FOREIGN KEY (id_dim_penjual) REFERENCES dim_penjual(id_dim_penjual),
+    FOREIGN KEY (id_dim_product) REFERENCES dim_product(id_dim_product)
+);
+
+
+
+CREATE TABLE dim_pembeli(
+    id_dimpembeli int not null AUTO_INCREMENT PRIMARY KEY,
+    nama_pembeli varchar(100),
+    updated datetime default CURRENT_TIMESTAMP
+    );
+CREATE TABLE dim_penjual(
+    id_dimpenjual int not null AUTO_INCREMENT PRIMARY KEY,
+    nama_penjual varchar(100),
+    updated datetime default CURRENT_TIMESTAMP
+    );
+CREATE TABLE dim_produk(
+    id_dimproduk int not null AUTO_INCREMENT PRIMARY KEY,
+    nama_produk varchar(100),
+    satuan varchar(10),
+    updated datetime default CURRENT_TIMESTAMP
+    );
+CREATE TABLE dim_date(
+    id_dimdate int not null AUTO_INCREMENT PRIMARY KEY,
+    date date,
+    year int,
+    month int,
+    day int
+    );
